@@ -8,9 +8,9 @@ const NavBar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/c3d3bbc5-8375-4634-901d-c54482d61c8c.png" 
+            src="/docs/suri_logo.png" 
             alt="Suri AI Logo" 
-            className="h-20 w-auto" /* Increased from h-16 to h-20 */
+            className="h-24 w-auto" 
           />
         </div>
         <div className="hidden md:flex items-center space-x-8">
