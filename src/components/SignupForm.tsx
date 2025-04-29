@@ -13,24 +13,42 @@ const SignupForm: React.FC = () => {
   
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
-    // Simulate API call
-    setTimeout(() => {
+  
+    const payload = { name, email, phone };
+  
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycby3I330PA0ZDkpZ43T0jCHysdvH-beO9oY4IxDTlsWmEt0FbP3TL8HZZqZzXrjuoY8yCA/exec", {
+        method: "POST",
+        mode: "no-cors", // impede erro de CORS, mas sem resposta visível
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+  
       toast({
         title: "Inscrição recebida!",
         description: "Obrigado por se inscrever. Entraremos em contato em breve.",
         duration: 5000,
       });
-      
+  
       setName('');
       setEmail('');
       setPhone('');
+    } catch (error) {
+      toast({
+        title: "Erro",
+        description: "Ocorreu um erro ao enviar os dados.",
+        variant: "destructive",
+      });
+    } finally {
       setLoading(false);
-    }, 1000);
+    }
   };
+  
   
   return (
     <div className="bg-white w-full max-w-md p-8 rounded-lg shadow-lg border border-gray-100">
@@ -86,7 +104,7 @@ const SignupForm: React.FC = () => {
           className="w-full bg-suri-500 hover:bg-suri-600 py-6"
           disabled={loading}
         >
-          {loading ? "Enviando..." : "Enviar Cadastro"}
+          {loading ? "Enviando..." : "Inscreva-se"}
         </Button>
       </form>
       
