@@ -234,7 +234,7 @@ const Index: React.FC = () => {
                 <img 
                   src="/lovable-uploads/c3d3bbc5-8375-4634-901d-c54482d61c8c.png" 
                   alt="Suri AI Logo" 
-                  className="h-14 w-auto"
+                  className="h-20 w-auto" /* Increased from h-14 to h-20 */
                 />
               </div>
               <p className="text-gray-400 max-w-md">
