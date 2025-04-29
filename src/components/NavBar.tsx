@@ -6,13 +6,12 @@ const NavBar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md py-4 shadow-sm">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center">
           <img 
-            src="/lovable-uploads/a19cc30a-4895-43a8-87db-f84711790851.png" 
+            src="/lovable-uploads/c3d3bbc5-8375-4634-901d-c54482d61c8c.png" 
             alt="Suri AI Logo" 
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
-          <span className="font-bold text-xl text-suri-800">Suri AI</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
           <a href="#method" className="text-gray-700 hover:text-suri-500 transition-colors">Método</a>

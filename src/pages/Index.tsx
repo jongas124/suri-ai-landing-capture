@@ -1,4 +1,3 @@
-
 import React from "react";
 import NavBar from "@/components/NavBar";
 import SignupForm from "@/components/SignupForm";
@@ -231,13 +230,12 @@ const Index: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0">
-              <div className="flex items-center space-x-3 mb-4">
+              <div className="mb-4">
                 <img 
-                  src="/lovable-uploads/a19cc30a-4895-43a8-87db-f84711790851.png" 
+                  src="/lovable-uploads/c3d3bbc5-8375-4634-901d-c54482d61c8c.png" 
                   alt="Suri AI Logo" 
-                  className="h-10 w-auto"
+                  className="h-14 w-auto"
                 />
-                <span className="font-bold text-2xl">Suri AI</span>
               </div>
               <p className="text-gray-400 max-w-md">
                 Revolucionando o aprendizado através de técnicas baseadas em neurociência,
