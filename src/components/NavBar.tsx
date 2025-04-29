@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
           <img 
             src="/lovable-uploads/c3d3bbc5-8375-4634-901d-c54482d61c8c.png" 
             alt="Suri AI Logo" 
-            className="h-16 w-auto" /* Increased from h-12 to h-16 */
+            className="h-20 w-auto" /* Increased from h-16 to h-20 */
           />
         </div>
         <div className="hidden md:flex items-center space-x-8">
