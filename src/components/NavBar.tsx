@@ -7,9 +7,11 @@ const NavBar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md py-4 shadow-sm">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-suri-400 to-suri-600 flex items-center justify-center">
-            <span className="text-white font-bold text-lg">S</span>
-          </div>
+          <img 
+            src="/lovable-uploads/a19cc30a-4895-43a8-87db-f84711790851.png" 
+            alt="Suri AI Logo" 
+            className="h-10 w-auto"
+          />
           <span className="font-bold text-xl text-suri-800">Suri AI</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">

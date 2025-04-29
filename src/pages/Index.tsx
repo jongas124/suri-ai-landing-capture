@@ -232,9 +232,11 @@ const Index: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="h-10 w-10 rounded-full bg-suri-500 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">S</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/a19cc30a-4895-43a8-87db-f84711790851.png" 
+                  alt="Suri AI Logo" 
+                  className="h-10 w-auto"
+                />
                 <span className="font-bold text-2xl">Suri AI</span>
               </div>
               <p className="text-gray-400 max-w-md">
